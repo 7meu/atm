@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import { useEffect, useState } from 'react';
 import { moneyTypes, MoneyType } from './interfaces/money';
 
 function App() {

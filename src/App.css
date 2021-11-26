@@ -24,10 +24,9 @@ h1 {
 .circle {
     border: 1px solid white;
     border-radius: 50%;
-    text-align: center;
-    line-height: 80px;
     display: inline-block;
     height: 80px;
+    line-height: 80px;
     margin: 10px 10px;
     text-align: center;
     width: 80px;
@@ -39,8 +38,8 @@ h1 {
 }
 
 .invisible {
-    opacity: 0%;
     cursor: default;
+    opacity: 0;
 }
 
 .invisible-dot {
