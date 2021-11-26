@@ -7,13 +7,25 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 600%;
+    text-align: center;
+}
+
 .center {
     margin: 0 auto;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
 }
 
 .circle {
     border: 1px solid white;
     border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
     display: inline-block;
     height: 80px;
     margin: 10px 10px;
@@ -26,10 +38,46 @@ body {
     color: #2bbed3;
 }
 
+.invisible {
+    opacity: 0%;
+    cursor: default;
+}
+
+.invisible-dot {
+    background-color: #2bbed3;
+    border-radius: 100%;
+    height: 40px;
+    margin: 5% auto;
+    width: 40px;
+}
+
+.invisible-rectangle {
+    height: 50px;
+    margin: auto;
+    width: 100px;
+}
+
+.item {
+    background-color: transparent;
+    border: 1px solid white;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
 .line {
     display: flex;
-    margin: 0 auto;
-    padding: 0;
+}
+
+.user-input {
+    font-size: 200%;
+}
+
+.table:after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 .submit {
@@ -37,7 +85,8 @@ body {
     border-radius: 100px;
     display: inline-block;
     height: 75px;
-    margin: 50px 50px;
+    line-height: 75px;
+    margin: 50px;
     text-align: center;
     width: 300px;
 }
@@ -47,41 +96,17 @@ body {
     color: #2bbed3;
 }
 
-.App {
-    text-align: center;
+.white-dot {
+    background-color: white;
+    border-radius: 100%;
+    height: 40px;
+    margin: 10% auto;
+    width: 40px;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: te;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.white-rectangle {
+    background-color: white;
+    height: 50px;
+    margin: auto;
+    width: 100px;
 }
