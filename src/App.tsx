@@ -7,7 +7,7 @@ function App() {
   const [amount, setAmount] = useState(''); // for changing the amount to deposit
   useEffect(() => { // first called when the page fully loads
     if (page === 0) // when it does
-      setPage(1) // move onto the main page
+      setPage(1); // move onto the main page
   });
 
   switch (page) {
@@ -66,7 +66,7 @@ function App() {
                 if (amount === '')
                   alert('Amount cannot begin with 0.');
                 else if (amount.length === 9)
-                  alert('You cannot deposit more than £1.000.000.000');
+                  alert('You cannot deposit more than £1.000.000.000!');
                 else
                   setAmount(amount + '0')
               }}>0</p>
@@ -113,17 +113,16 @@ function App() {
               <h2>£ {amount}</h2>
             </div>
           </div>
-          
+
           <div className="table">
             <div className="column">
               {distribution[MoneyType.Note].map(it =>
                 <div className="line item">
                   <div className="white-rectangle">
                     <div className="invisible-dot"></div>
-
                   </div>
-                  <div><p>{it[0]} x {it[1]}</p></div>
 
+                  <div><p>{it[0]} x {it[1]}</p></div>
                 </div>
               )}
             </div>
